@@ -45,6 +45,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
+            this.lblId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,6 +208,7 @@
             this.btnEditar.TabIndex = 13;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnApagar
             // 
@@ -219,12 +221,23 @@
             this.btnApagar.TabIndex = 14;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(234, 10);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(0, 13);
+            this.lblId.TabIndex = 15;
+            this.lblId.Visible = false;
             // 
             // CadastroPlanta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(923, 450);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.txtBusca);
@@ -268,6 +281,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.Label lblId;
     }
 }
 
